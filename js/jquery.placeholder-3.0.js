@@ -44,6 +44,7 @@
 				$holder.hide();
 			}
 		}
+		holderToggle();
 		if('oninput' in elem){
 			$elem.bind('input',holderToggle);
 		}else{
