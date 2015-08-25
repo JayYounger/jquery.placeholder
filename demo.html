@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="renderer" content="webkit">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <title></title>
+    <script src="js/jquery-1.11.1.js"></script>
+    <style>
+        *{
+            -webkit-animation-play-state:inherit;
+            animation-play-state: inherit;
+        }
+
+        html{
+            font-size: 62.5%;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            font-family: '寰蒋闆呴粦','Microsoft YaHei';
+        }
+        input[type=radio]{
+            margin: 0px 1px 3px;
+            vertical-align: middle;
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+            background: #E6E6E6;
+        }
+        .textInput{
+            color: #000;
+            font-size: 50px;
+            height: 80px;
+            line-height: 80px;
+            text-indent: 30px;
+            background: #FFF;
+            border: 1px solid #999;
+            outline: none;
+            position: relative;
+            left: 0px;
+        }
+    </style>
+    <script type="text/javascript" src="js/jquery.placeholder-3.0.js"></script>
+    <script>
+        $(function(){
+            $("input[placeholder]:eq(0)").placeholder();
+        })
+    </script>
+</head>
+<body>
+
+<div>
+    <br><br>
+    <input type="text" class="textInput" placeholder="请输入用户名">
+    <br><br>
+    <input type="text" class="textInput" placeholder="请输入密码">
+</div>
+</body>
+</html>
