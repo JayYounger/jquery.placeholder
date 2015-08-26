@@ -39,7 +39,11 @@
 		info.color="#A9A9A9";
 		info.backgroundColor = $elem.css("backgroundColor") || "transparent";
 		info.zIndex = $elem.css("zIndex");
+
 		if(isIE7){
+			if(elem.offsetParent == document.body || elem.offsetParent==document.documentElement){
+				info.marginLeft = parseInt($(elem).css("marginLeft"),10);
+			}
 			info.float = "left";
 			info.display = "inline";
 		}
